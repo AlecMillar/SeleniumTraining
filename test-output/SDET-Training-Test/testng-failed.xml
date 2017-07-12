@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SDET-Training-Test]">
+  <test name="Account Management System LOGIN(failed)">
+    <classes>
+      <class name="com.SDETtraining.ams.Login">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="testLogin"/>
+        </methods>
+      </class> <!-- com.SDETtraining.ams.Login -->
+    </classes>
+  </test> <!-- Account Management System LOGIN(failed) -->
+</suite> <!-- Failed suite [SDET-Training-Test] -->

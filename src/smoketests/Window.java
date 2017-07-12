@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 
 import junit.framework.Assert;
 
+@SuppressWarnings("deprecation")
 public class Window {
 	
 	// This method tests the page title

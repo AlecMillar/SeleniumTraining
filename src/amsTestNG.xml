@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="SDET-Training-Test" parallel="false">
+  <test name="Account Management System NEW USER">
+    <classes>
+      <class name="com.SDETtraining.ams.NewUser"/>
+    </classes>
+  </test>
+  <test name="Account Management System LOGIN">
+    <classes>
+      <class name="com.SDETtraining.ams.Login"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -11,14 +11,14 @@ import org.testng.annotations.Test;
 
 import utilities.DriverFactory;
 
-public class NewUser {
-	
+public class AccountManagementDDT {
+
 	WebDriver driver;
 	String baseUrl = "http://sdettraining.com/trguitransactions/Account.aspx";
 
-	@Test(dataProvider = "dp")
-	public void testNewUser(String firstName, String lastName, String email, String password, String phone, String country) {
-		
+	@Test (priority=1, dataProvider = "getNewData")
+	public void NewUserTest(String firstName, String lastName, String email, String password, String phone, String country) {
+
 		// Navigates to Create Account page and fills out account info
 		driver.findElement(By.id("createaccount")).click();
 		driver.findElement(By.id("MainContent_txtFirstName")).sendKeys(firstName);
@@ -44,15 +44,34 @@ public class NewUser {
 			driver.findElement(By.id("MainContent_checkUpdates")).click();
 			System.out.println("Unchecking Updates.");
 		}
-		
+
 		// Submits account info
 		driver.findElement(By.id("MainContent_txtInstructions")).sendKeys("Automatically filled by Selenium for testing purposes.");
 		driver.findElement(By.id("MainContent_btnSubmit")).click();
-	
+
 		//	Assert response/confirmation
 		String confirmation = driver.findElement(By.id("MainContent_lblTransactionResult")).getText();
 		String actual = "Customer information added successfully";
 		Assert.assertEquals(confirmation,actual);
+	}
+
+	@Test (priority=2, dataProvider = "getLoginData")
+	public void LoginTest(String email, String password) {
+		
+		// Enters login data and attempts to login
+		driver.findElement(By.id("MainContent_txtUserName")).clear();
+		driver.findElement(By.id("MainContent_txtUserName")).sendKeys(email);
+		driver.findElement(By.id("MainContent_txtPassword")).clear();
+		driver.findElement(By.id("MainContent_txtPassword")).sendKeys(password);
+		driver.findElement(By.id("MainContent_btnLogin")).click();
+
+		// Checks for successful login
+		String result = driver.findElement(By.id("MainContent_lblid")).getText();
+		if (result.contains("Welcome back!")) {
+			System.out.println("TEST PASSED");
+		} else {
+			Assert.fail("Could not find element");
+		}
 	}
 
 	@BeforeMethod
@@ -61,13 +80,19 @@ public class NewUser {
 		driver = DriverFactory.newDriver("chrome");
 		driver.get(baseUrl);
 	}
+
 	@AfterMethod
 	public void afterMethod() {
 		driver.quit();
 	}
 
 	@DataProvider
-	public Object[][] dp() {
+	public String[][] getNewData() {
 		return datadriven.Excel.get("C:/Users/Alec/Google Drive/Work/SDET Training/Test Data/newdata.xls");
 	}
+	@DataProvider
+	public String[][] getLoginData() {
+		return datadriven.Excel.get("C:/Users/Alec/Google Drive/Work/SDET Training/Test Data/logindata.xls");
+	}
+
 }
