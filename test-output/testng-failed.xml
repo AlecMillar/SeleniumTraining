@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.SDETtraining.ams.Login">
+      <class name="com.SDETtraining.amazon.AmazonSearch">
         <methods>
-          <include name="beforeMethod"/>
-          <include name="afterMethod"/>
-          <include name="testLogin"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="testAddToCart" invocation-numbers="0 1 2 3"/>
         </methods>
-      </class> <!-- com.SDETtraining.ams.Login -->
+      </class> <!-- com.SDETtraining.amazon.AmazonSearch -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
