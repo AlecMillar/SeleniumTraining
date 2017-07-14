@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="76365" started-at="2017-07-13T23:27:27Z" finished-at="2017-07-13T23:28:43Z">
+  <suite name="Default suite" duration-ms="80906" started-at="2017-07-14T00:49:15Z" finished-at="2017-07-14T00:50:36Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="76365" started-at="2017-07-13T23:27:27Z" finished-at="2017-07-13T23:28:43Z">
+    <test name="Default test" duration-ms="80906" started-at="2017-07-14T00:49:15Z" finished-at="2017-07-14T00:50:36Z">
       <class name="com.SDETtraining.amazon.AmazonSearch">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.SDETtraining.amazon.AmazonSearch@573f2bb1]" name="beforeClass" is-config="true" duration-ms="17669" started-at="2017-07-13T19:27:27Z" finished-at="2017-07-13T19:27:45Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.SDETtraining.amazon.AmazonSearch@573f2bb1]" name="beforeClass" is-config="true" duration-ms="17076" started-at="2017-07-13T20:49:15Z" finished-at="2017-07-13T20:49:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="testAddToCart(java.lang.String, java.lang.String)[pri:0, instance:com.SDETtraining.amazon.AmazonSearch@573f2bb1]" name="testAddToCart" duration-ms="14403" started-at="2017-07-13T19:27:45Z" data-provider="getSearchData" finished-at="2017-07-13T19:27:59Z">
+        <test-method status="PASS" signature="testAddToCart(java.lang.String, java.lang.String)[pri:0, instance:com.SDETtraining.amazon.AmazonSearch@573f2bb1]" name="testAddToCart" duration-ms="14471" started-at="2017-07-13T20:49:32Z" data-provider="getSearchData" finished-at="2017-07-13T20:49:46Z">
           <params>
             <param index="0">
               <value>
@@ -20,14 +20,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[trashcan]]>
+                <![CDATA[trash can]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddToCart -->
-        <test-method status="PASS" signature="testAddToCart(java.lang.String, java.lang.String)[pri:0, instance:com.SDETtraining.amazon.AmazonSearch@573f2bb1]" name="testAddToCart" duration-ms="12584" started-at="2017-07-13T19:27:59Z" data-provider="getSearchData" finished-at="2017-07-13T19:28:12Z">
+        <test-method status="PASS" signature="testAddToCart(java.lang.String, java.lang.String)[pri:0, instance:com.SDETtraining.amazon.AmazonSearch@573f2bb1]" name="testAddToCart" duration-ms="13798" started-at="2017-07-13T20:49:46Z" data-provider="getSearchData" finished-at="2017-07-13T20:50:00Z">
           <params>
             <param index="0">
               <value>
@@ -43,7 +43,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddToCart -->
-        <test-method status="PASS" signature="testAddToCart(java.lang.String, java.lang.String)[pri:0, instance:com.SDETtraining.amazon.AmazonSearch@573f2bb1]" name="testAddToCart" duration-ms="11826" started-at="2017-07-13T19:28:12Z" data-provider="getSearchData" finished-at="2017-07-13T19:28:24Z">
+        <test-method status="PASS" signature="testAddToCart(java.lang.String, java.lang.String)[pri:0, instance:com.SDETtraining.amazon.AmazonSearch@573f2bb1]" name="testAddToCart" duration-ms="13998" started-at="2017-07-13T20:50:00Z" data-provider="getSearchData" finished-at="2017-07-13T20:50:14Z">
           <params>
             <param index="0">
               <value>
@@ -59,7 +59,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddToCart -->
-        <test-method status="PASS" signature="testAddToCart(java.lang.String, java.lang.String)[pri:0, instance:com.SDETtraining.amazon.AmazonSearch@573f2bb1]" name="testAddToCart" duration-ms="11361" started-at="2017-07-13T19:28:24Z" data-provider="getSearchData" finished-at="2017-07-13T19:28:35Z">
+        <test-method status="PASS" signature="testAddToCart(java.lang.String, java.lang.String)[pri:0, instance:com.SDETtraining.amazon.AmazonSearch@573f2bb1]" name="testAddToCart" duration-ms="12181" started-at="2017-07-13T20:50:14Z" data-provider="getSearchData" finished-at="2017-07-13T20:50:26Z">
           <params>
             <param index="0">
               <value>
@@ -75,7 +75,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddToCart -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.SDETtraining.amazon.AmazonSearch@573f2bb1]" name="afterClass" is-config="true" duration-ms="8322" started-at="2017-07-13T19:28:35Z" finished-at="2017-07-13T19:28:43Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.SDETtraining.amazon.AmazonSearch@573f2bb1]" name="afterClass" is-config="true" duration-ms="9184" started-at="2017-07-13T20:50:26Z" finished-at="2017-07-13T20:50:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->

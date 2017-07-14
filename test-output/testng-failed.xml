@@ -7,7 +7,7 @@
         <methods>
           <include name="beforeClass"/>
           <include name="afterClass"/>
-          <include name="testAddToCart" invocation-numbers="0 1 2 3"/>
+          <include name="testAddToCart"/>
         </methods>
       </class> <!-- com.SDETtraining.amazon.AmazonSearch -->
     </classes>
